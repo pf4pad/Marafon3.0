@@ -180,6 +180,15 @@ p {
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
+  transition: transform 0.3s;
+}
+
+.img__more {
+  transition: all 0.3s;
+}
+
+.link__more:hover .img__more {
+  transform: translateX(15px);
 }
 
 .team {

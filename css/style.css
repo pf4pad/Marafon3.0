@@ -302,6 +302,10 @@ p {
   margin-bottom: 40px;
 }
 
+.slider {
+  max-width: 834 px;
+}
+
 .reviews__content {
   display: flex;
   justify-content: center;

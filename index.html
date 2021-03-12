@@ -142,14 +142,150 @@
       </div>
     </section>
     <section class="team" id="team">
-      <h2 class="team__title">
-        Команда
-      </h2>
+      <div class="container__content">
+        <h2 class="team__title">
+          Команда
+        </h2>
+        <ul class="team__list">
+          <li class="team__item">
+            <img src="img/team/Masha.jpg" alt="" class="team__item-img">
+            <p class="team__item-text">
+              Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+              и помогает сделать вашу квартиру красивой и уютной.
+            </p>
+          </li>
+          <li class="team__item">
+            <img src="img/team/Sasha.jpg" alt="" class="team__item-img">
+            <p class="team__item-text">
+
+              С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все
+              документы
+              и ответит на все вопросы.
+            </p>
+          </li>
+          <li class="team__item">
+            <img src="img/team/Katya.jpg" alt="" class="team__item-img">
+            <p class="team__item-text">
+              Катя тоже занимается дизайном.
+              Она всегда находит общий язык
+              с клиентами и точно знает,
+              как обсутроить дом так, чтобы вам понравилось.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="container">
+        <h2 class="work__title">
+          Как мы работаем
+        </h2>
+        <ul class="work__list">
+          <li class="work__item">
+            <p class="work__step">1</p>
+            <p class="work__text">Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем договор.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__step">2</p>
+            <p class="work__text">Подбираем мебель, текстиль, аксессуры. Делаем 3D-
+              зуализацию.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__step">3</p>
+            <p class="work__text">Находим нужные магазины, помогаем с доставкой
+              и оплатой товаров.</p>
+          </li>
+          <li class="work__item">
+            <p class="work__step">4</p>
+            <p class="work__text">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для
+              мелочей</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container__content">
+        <h2 class="reviews__title">
+          Отзывы
+        </h2>
+        <div class="reviews__content">
+          <div class="reviews__text">
+            <p class="reviews__description"> «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию
+              для
+              украшения своего дома.
+              <br>
+              <br>
+              Работа шла быстро, было очень приятно общаться и взаимодествовайть
+              с сотрудниками. Не ожидала, что это будет так легко!
+              <br>
+              <br>
+              Буду советовать и своим друзьям к вам обращаться!»
+            </p>
+            <span class="reviews_signature">АННА БЕЛОВСКАЯ</span>
+          </div>
+          <div class="reviews__images">
+            <img src="img/reviews/image-top.jpg" alt="" class="reviews__image-top">
+            <img src="img/reviews/image-bottom.jpg" alt="" class="reviews__image-bottom">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="container">
+        <div class="order__inner">
+          <div class="order__content">
+            <h2 class="order__title">
+              Оставить заявку
+            </h2>
+            <p class="order__text">
+              Оставьте свои контакты. Менеджер перезвонит <br>
+              в удобное вам время и ответит на все вопросы.
+            </p>
+            <form action="telegram.php" method="POST">
+              <div class="form-group">
+                <input type="text" name="" id="" placeholder="Ваше имя" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="" id="" placeholder="Введите телефон" required>
+              </div>
+
+
+              <div class="form__btn">
+                <button type="submit">
+                  Оставить заявку
+                </button>
+              </div>
+
+            </form>
+          </div>
+          <div class="order__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1615535376257!5m2!1sru!2sua"
+              width="590" height="624" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+
+      </div>
     </section>
   </main>
   <footer class="footer">
     <div class="container">
+      <div class="footer__list">
+        <div class="footer__contact">
+          <a href="tel:+79818574624" class="phone__link">+7 (981) 857-46-24
+          </a>
+          <p class="footer__adress">
+            г. Санкт-петербург, ул. Большая Конюшенная, 19
+          </p>
+        </div>
 
+        <p class="footer__FOP">
+          ИП Королёва А.А.
+
+        </p>
+      </div>
     </div>
   </footer>
 </body>

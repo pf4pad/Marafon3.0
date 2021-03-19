@@ -52,6 +52,21 @@ p
   justify-content: space-between
 .meni__item:not(:last-child)
   margin-right: 22px
+.menu__link
+  position: relative
+.menu__link::before
+  position: absolute
+  content: ''
+  width: 0
+  left: 0
+  height: 3px
+  bottom: -2px
+  transition: all .5s
+  border-bottom: 1px solid
+.menu__link:hover::before
+  width: 100%
+  right: auto
+  left: 0
 
 .header__container
   display: flex
@@ -209,7 +224,9 @@ p
   width: 70px
   height: 70px
   margin-bottom: 20px
-
+  transition: transform 0.5s
+.work__step:hover
+  transform: scale(1.2)
 .reviews
   padding: 65px 0
 
@@ -264,6 +281,7 @@ p
 .order__inner
   display: flex
   justify-content: space-between
+
 .order__content
   margin-right: 20px
 .order__title
@@ -300,6 +318,9 @@ p
   padding: 25px 66px
   border: none
   cursor: pointer
+  margin-bottom: 186px
+.order__map
+  width: 50%
 .footer
   padding: 37px 0
 
@@ -317,3 +338,62 @@ p
 .footer__adress
   margin-left: 42px
 .footer__FOP
+.get-started
+  padding-left: calc((100% - 1110px) / 2)
+  padding-right: 15px
+
+@media (max-width: 1140px)
+  .get-started
+    padding-left: 15px
+
+@media (max-width: 992px)
+  .services-list
+    gap: 50px
+    grid-template-columns: repeat(2, 1fr)
+
+  .services-subtitle
+    max-width: none
+
+  .services-descr
+    max-width: none
+
+  .footer-middle
+    grid-template-columns: repeat(2, 1fr)
+
+  .footer-column:last-child::before
+    display: none
+
+@media (max-width: 768px)
+  .get-started-title
+    font-size: 42px
+    line-height: 54px
+
+@media (max-width: 576px)
+  .footer-middle
+    --grid-gap: 40px
+    grid-template-columns: repeat(1, 1fr)
+
+  .hero-title
+    font-size: 50px
+    line-height: 65px
+
+  .services
+    padding-top: 50px
+    padding-bottom: 50px
+
+  .footer-bottom
+    flex-direction: column
+
+@media (max-width: 375px)
+  .footer-mail
+    font-size: 20px
+
+  .logo
+    width: 65%
+
+  .hero-title
+    font-size: 45px
+    line-height: 60px
+
+  .services-list
+    grid-template-columns: repeat(1, 1fr)
